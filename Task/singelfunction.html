@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0%;
+            /* padding: 0%; */
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(241, 137, 63);
+            color: aliceblue;
+            font-size: 25px;
+        }
+
+        form{
+            /* text-align: center; */
+            padding: 20px 0px;
+        }
+        fieldset{
+            background-image: url(../../Assignment/Module-1-HTML/image/coder.jpg);
+            background-position: center;
+            padding: 30px 0px;
+            line-height: 30px;
+        }
+        
+        input{
+            margin-left: 50px;
+            width: 180px;
+            padding: 5px 0px;
+            background-color: rgb(61, 67, 84);
+            color: aliceblue;
+            border-radius: 10px;
+        }
+
+    
+    </style>
+</head>
+<body>
+
+    <form action="" >
+        <fieldset>
+
+            
+            Name :<input type="text" id="input1" onblur="validation(this, 'error1')">
+            <span id='error1' ></span>
+            <br><br>
+            Email :<input type="email" id="input2" onblur="validation(this, 'error2')">
+            <span id="error2" ></span>
+            <br><br>
+            Password :<input type="password" id="input1" onblur="validation(this, 'error3')">
+            <span id="error3" ></span>
+            <br><br>
+            Number :<input type="number" id="input1" onblur="validation(this, 'error4')">
+            <span id="error4" ></span><br><br>
+
+            <input type="submit" value="submit your data"> 
+        </fieldset>
+</form>
+
+    <script>
+
+        function validation(a, b){
+            if(a.value == ""){
+
+                document.getElementById(b).innerText ="Enter valid information"
+            }else{
+
+                document.getElementById(b).innerText = ''
+            }
+        }
+    </script>
+</body>
+</html>
