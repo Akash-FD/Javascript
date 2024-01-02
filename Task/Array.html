@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array Color</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      color-scheme: dark;
+
+    }
+    
+
+    #colorbox {
+      margin-block: 3%;
+      width: 27%;
+      height: 39vh;
+      margin-inline: auto;
+      border: 21px groove rgba(245, 245, 245, 0.81);
+      box-shadow: 0px 0px 90px rgba(245, 245, 245, 0.81);
+      background-color: rgba(0, 0, 0, 0.12);
+      border-radius: 2.1rem;
+      transition: box-shadow 390ms linear;
+    }
+
+    button {
+      display: block;
+      margin-inline: auto;
+      padding: 1.2rem;
+      font-size: 1.1rem;
+      margin-block: 6%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="colorbox"></div>
+
+  <button type="button" id="stbtn" onclick="COLOR()">START</button>
+
+  <h1>STOP IS NOT WORKING</h1>
+
+
+
+  <script>
+
+    let clArr = ["RED", "GREEN", "BLUE", "HOTPINK","GREY","AQUA","YELLOW","CHOCOLATE","BURLYWOOD"];
+    
+    let timer = 0;
+    
+
+
+    function COLOR() {
+      
+      if (document.getElementById("stbtn").innerHTML == "START") {
+        
+    
+        document.getElementById("stbtn").innerHTML = "STOP";
+
+        
+        for (let i = 0; i < clArr.length; i++) {
+          
+          if (document.getElementById("stbtn").innerHTML == "START") {
+            break;
+          }
+
+          setTimeout(() => {
+            
+            console.log(i + " = " + clArr[i]);
+            document.getElementById("colorbox").style.backgroundColor = clArr[i];
+            document.getElementById("colorbox").style.boxShadow = "0px 0px 90px " + clArr[i];
+                 
+          }, timer = timer + 900);
+         
+        }
+        
+      }else {
+            document.getElementById("stbtn").innerHTML = "START"; 
+           }
+          
+    }
+
+// setInterval(() => {
+//   console.log(i+" = "+clArr[i]);
+//   document.getElementById("colorbox").style.backgroundColor = clArr[i];
+// }, timer = timer + 900);    
+          
+// ALTOUGH THIS IS WORKING BUT AFTER ONE ROUND THE COLORS ARE NOT EXECUTING INDEX BY INDEX IT IS EXECUTING RANDOMLY. 
+        
+</script>
+</body>
+
+</html>
