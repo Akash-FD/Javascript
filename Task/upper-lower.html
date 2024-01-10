@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="box">
+
+        <input type="text" placeholder="Orignel String" id="in1">
+        <hr>
+        <p id="in2"></p>
+        <hr>
+        <hr>
+        <button onclick="UPPER()">Uppercase</button>
+        <button onclick="LOWER()">Lowercase</button>
+        <button onclick="len()">Total Lenth</button>
+        <button onclick="remove()">Remove Space</button>
+        <button>Count Space</button>
+        <button>Clear</button>
+
+    </div>
+
+    <script>
+        function UPPER(){
+            let a = document.getElementById("in1").value;
+            document.getElementById("in2").innerHTML = document.getElementById("in1").value.toUpperCase();
+        }
+        function LOWER(){
+            let a = document.getElementById("in1").value;
+            document.getElementById("in2").innerHTML = document.getElementById("in1").value.toLowerCase();
+        }
+        function len(){
+            let a = document.getElementById("in1").value;
+            document.getElementById("in2").innerHTML = document.getElementById("in1").value.length;
+        }
+        function remove(){
+            let a = document.getElementById("in1").value;
+            document.getElementById("in2").innerHTML = document.getElementById("in1").value.toUppercase();
+        }
+    </script>
+</body>
+
+</html>
