@@ -1,46 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #box {
+            width: 200px;
+            height: 200px;
+            border: 2px solid red;
+        }
+    </style>
 </head>
+
 <body>
-    <section class="section1">
-        <i data-visualcompletion="css-img" aria-label="Instagram" class="" role="img" style="background-image: url(&quot;https://static.cdninstagram.com/rsrc.php/v3/ys/r/WBLlWbPOKZ9.png&quot;); background-position: 0px 0px; background-size: 176px 264px; width: 174px; height: 50px; background-repeat: no-repeat; display: inline-block;"></i><br>
-        <input type="text" placeholder="Phone number, username, or email"><br>
+    <div id="box"></div>
 
-        <div class="password">
+    <button id="btn" onclick="light1()">Start</button>
 
-            <input type="password" placeholder="Password">
-            <!-- <i class="fa-solid fa-eye"></i> -->
-        </div>
-        
-        <button> Log in</button>
-        <p>__________OR___________</p>
-
-            <div class="fblogo">
-
-                <i class="fa-brands fa-facebook" class="fb"></i>
-                <span>Log in with Facebook</span>
-                <p>Forgot password?</p>
-            </div>
-        
-    </section>
-
-    <section class="section2">
-        <span>Don't have an account?</span>
-        <a href="">Sign up</a>
-    </section>
-
-    <section class="section3">
-        <img src="../img/playstor.png" alt="">
-        <img src="../img/Microsoft.png" alt="">
-
-    </section>
 
     <script>
+
+        let a = ["red", "pink", "black", "green"];
+
+        // let b = a
+        // document.getElementById("para").innerText = b
+
+
+        function light1() {
+
+           if (document.getElementById("btn").innerText = "Start") {
+                
+            document.getElementById("btn").innerText = "Stop"
+            
+            
+            for (let i = 0; i < a.length; i++) {
+                let timer = 0;
+                
+                setTimeout(() => {
+                    
+                   // document.getElementById("box").style.backgroundColor = a[i];
+                    console.log(a[i])
+                    
+                    
+                },timer = timer + 1000);
+                
+            
+            }
+            }
+            else{
+                console.log("hey");
+            }
+            
+        }
+        </script>
+    
+    </body>
+    
+    </html>
+
+                    
         
-    </script>
-</body>
-</html>
+                
+                
+                
+        
+
+                    
+                    
+                
+                
+
+        
+
+                
+            
+        
+            
+
+          
+

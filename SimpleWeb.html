@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* border: 1px solid black; */
+           
+
+        }
+        body{
+            background-color: rgb(38, 38, 38);
+        }
+        .logo{
+            border-bottom: 5px solid orange;
+            border-radius: 50%;
+        }
+
+        nav {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 30px;
+            background-color: black;
+            color: aliceblue;
+        }
+
+        .navbar{
+            display: flex;
+            list-style-type: none;
+            gap: 20px;
+        }
+
+        .navbar li:hover{
+            border-bottom: 3px solid orange
+        } 
+        .section1{
+            height: 570px;
+            background-image: url("https://welpmagazine.com/wp-content/uploads/2020/10/Where-to-find-the-best-menswear-1-AS-Colour-1536x853.jpg");
+            font-size: 30px;
+            text-align: center;
+            
+        }
+        .main{
+            margin:0 auto;
+            margin-top: 40px;
+            width: 400px;
+            color: black;
+        }
+
+        .section2,.section22{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            color: aliceblue;
+            text-align: center;
+            
+        }
+        .box{
+            width: 300px;
+            height: 300px;
+            overflow: hidden;
+        }
+        .box img{
+            width: 90%;
+            aspect-ratio: 1.5/2;
+            transition: transform 0.5s;
+        }
+        .box img:hover{
+            transform: scale(1.1);
+         
+        }
+        .box h1{
+            background-color: red;
+        }
+        
+            
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <h1>One.<sub style="font-size: 30px
+            ;">Sky</sub></h1>
+        </div>
+
+        <div class="navbar">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contac us</li>
+            <li>Servies</li>
+            <input type="text" placeholder="Enter your product">
+            <button>Add</button>
+    
+        </div>
+        <div class="menu">
+            
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        
+    </nav>
+
+    <section>
+        <div class="section1">
+            <div class="main">
+
+                <h1>One Sky </h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, temporibus!</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section style="text-align: center;">
+
+        <h1 style="color: aliceblue;background-color: green;">Men's Wear</h1><br>
+        <div class="section2">
+            <div class="box">
+                <h1>T-Shirt</h1>
+                <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/680792/01/mod01/fnd/IND/fmt/png/Big-Logo-Men's-Crew-Neck-Sweatshirt" alt="">
+            </div>
+            <div class="box">
+                <h1>Shirt</h1>
+                <img src="https://cdn.shopify.com/s/files/1/0981/8178/files/tone-on-tone-dressing-blue-oxford-shirt.jpg?5470127182368086585" alt="">
+            </div>
+            <div class="box">
+                <h1>Jeans</h1>
+                <img src="https://i.pinimg.com/originals/af/d0/41/afd041d86e5ddacdc6c20411ee2fb31d.jpg" alt="">
+            </div>
+        </div><br><br>
+        <h1 style="color: aliceblue;background-color: green;">Women's Wear</h1><br>
+        <div class="section22">
+            <div class="box">
+                <h1>Kurti</h1>
+                <img src="https://i.pinimg.com/originals/c4/ba/6f/c4ba6f43a9e2979be826c2a52bfc5d51.jpg" alt="">
+            </div>
+            <div class="box">
+                <h1>Western</h1>
+                <img src="http://image.dhgate.com/albu_334460739_00-1.0x0/2013-hot-western-women-dress-bohemian-style.jpg" alt="">
+            </div>
+            <div class="box">
+                <h1>Lower</h1>
+                <img src="https://tse3.mm.bing.net/th?id=OIP.rnp0tw8HXp4Vq1rQ53aufwHaG1&pid=Api&P=0&h=180" alt="">
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

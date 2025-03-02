@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+   <input type="number" name="" id="in1">
+   <button onclick="result1()">show</button>
+   <p id="para"></p>
+    <script>
+        //  var name="akash";
+        //  var gender="male";
+
+        //  if(gender == "male"){
+
+        //     document.write("Hello MR." + name);
+
+        //  }else{
+
+        //     document.write("hello Miss." + name);
+        //  }
+
+
+        
+        
+        function result1(){
+            let per = document.getElementById("in1").value
+
+
+            
+            if(per >= 80 && per<= 100){
+               
+            document.write("you are in Merit.")
+         }
+         else if(per >= 60 && per< 80){
+            
+            document.write("you are I Division.")
+         }
+         else if(per >= 45 && per< 60){
+            
+            document.write("you are II Division .")
+         }
+         else if(per >= 33 && per< 45){
+            
+            document.write("you are III Division.")
+         }
+         else if (per< 33){
+            
+            document.write("you are FAIL.")
+
+         }
+         else{
+            alert("Enter valid percent.")
+         }
+      }
+    </script>
+</body>
+</html>

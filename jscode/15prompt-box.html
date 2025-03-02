@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(34, 35, 32);
+            text-align: center;
+            font-size: 50px;
+            color: aliceblue;
+            margin-top: 20%;
+
+        }
+        div{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="showResult"></div>
+    <script>
+        var a = prompt("What is your name ?");
+        // confirm("confirm your name"); 
+        
+
+
+        // alert(a);
+        // document.write("Hello Akash Patel ");
+
+
+        var per = prompt("Enter your Persentage");
+        let b = document.getElementById('showResult')
+        
+        confirm("Confirm your Persentage")
+        
+
+        if (per >= 80 && per <= 100) {
+
+        
+            b.innerText = a + ' ' + "Congrats..you are in Merit.";
+            
+        }
+        else if (per >= 60 && per < 80) {
+            b.innerText = a + ' ' + "you are in I division.";
+
+
+            // document.write("you are I Division.");
+        }
+        else if (per >= 45 && per < 60) {
+
+            b.innerText = a + ' ' + "you are II division.";
+
+            // document.write("you are II Division .");
+        }
+        else if (per >= 33 && per < 45) {
+            b.innerText = a + ' ' + "you are in III division.";
+
+
+            // document.write("you are III Division.");
+        }
+        else if (per < 33) {
+            b.innerText = a + ' ' + "Sorry! you are FAIL.";
+            b.style.color  = "red";
+            
+
+
+            // document.write("you are FAIL.");
+        }
+        else {
+            b.innerText = a + ' ' + "Enter valid percent.";
+            
+            // document.write("Enter valid percent.")
+        }
+    </script>
+</body>
+
+</html>

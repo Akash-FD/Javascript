@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #img2,#img3{
+            display: none;
+            
+
+        }
+    </style>
+</head>
+
+<body>
+    <img src="../../Akash Github/HTML/Images/Gandhinagar.jpg" alt="" id="img1">
+    <img src="../../Akash Github/HTML/Images/Mumbai.jpg" alt="" id="img2">
+    <img src="../../Akash Github/HTML/Images/Jaipur.jpg" alt="" id="img3">
+
+
+    <button id="btn1" onclick="slide1()">next</button>
+    <button id="btn2">prev</button>
+
+    <script>
+        function slide1() {
+
+
+            var a = document.getElementById("img1")
+            var b = document.getElementById("img2")
+            var c = document.getElementById("img3")
+
+
+            var i = 0;
+
+
+            if (i == 0) {
+                a.style.display = "none"
+                b.style.display = "inline-block"
+                 c.style.display = "none"
+
+               var i = 1;
+            } else{
+                a.style.display = "none"
+                b.style.display = "none"
+                c.style.display = "inline-block"
+                var i = 0
+            }
+            
+        }
+
+
+    </script>
+
+</body>
+
+</html>

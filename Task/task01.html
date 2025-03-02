@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+        width: 200px;
+        height: 250px;
+        border: 2px solid black;
+        padding: 5px;
+        background-color: lightblue;
+        }
+
+        #box img{
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div id="box">
+            <img src="../img/ensepsen (1).jpg" alt="" width="100%">
+            <h2>Heading</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+
+        </div>
+    </div>
+    <script>
+        let a = document.getElementById("box").innerHTML;
+        a.style.width = "200px"
+        a.style.height = "250px"
+        a.style.border = "2px solid black"
+        a.style.padding = "5px"
+        a.style.backgroundColor = "lightblue"
+        
+        document.write(a)
+       
+
+        
+
+        
+        console.log(a)
+  
+    </script>
+</body>
+</html>

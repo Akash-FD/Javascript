@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>invert mirror right angel</title>
+</head>
+
+<body>
+
+    <input type="text" id="in1">
+    <button onclick="pattern()">done</button>
+
+    <script>
+        function pattern() {
+            let a = document.getElementById("in1").value;
+
+             for(i=a; i>=1; i--){
+
+                for(j=a; j>i; j--){
+
+                    document.write(" &nbsp; ");
+                }
+                for(k=1; k<=i; k++){
+                    
+                    document.write("*")
+                }
+                
+                document.write("<br>");
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>

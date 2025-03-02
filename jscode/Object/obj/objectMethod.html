@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 1. Object.create() Creates a new object with the specified prototype object and optional properties.
+        // ----------------------------------------------------------------------------------
+        // 2. Object.assign(target, ...sources)
+        // let target = { a: 1 };
+        // let source = { b: 2 };
+        // Object.assign(target, source);  // { a: 1, b: 2 }
+
+        // ----------------------------------------------------------------------------------
+        // 3.Object.keys(obj)
+        // let obj = { a: 1, b: 2 };
+        // Object.keys(obj);  // ["a", "b"] return an array 
+
+        // ----------------------------------------------------------------------------------
+        // 4.Object.values(obj)
+        // Object.values(obj);  // [1, 2] return an array 
+
+        // ----------------------------------------------------------------------------------
+        // 5.Object.entries(obj)
+        // Object.entries(obj);  // [["a", 1], ["b", 2]] return an array 
+
+        // ----------------------------------------------------------------------------------
+        // 6.Object.freeze(obj)
+        // let obj = { a: 1 };
+        // Object.freeze(obj);
+        // obj.a = 2;  // This will not change the object
+
+        let newObj ={}
+        Object.create(newObj)
+
+        newObj.name="akash";
+        newObj.age=22;
+        newObj.city="Ahemedabad";
+        console.log(newObj);
+        
+
+    </script>
+</body>
+
+</html>

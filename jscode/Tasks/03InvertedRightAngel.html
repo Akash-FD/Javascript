@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>invert right angel</title>
+</head>
+
+<body>
+
+    <input type="text" id="in1">
+    <button onclick="pattern()">done</button>
+
+    <script>
+        function pattern() {
+            let a = document.getElementById("in1").value;
+
+
+
+            for (i = a; i >= 1; i--) {
+
+                for (j = 1; j <= i; j++) {
+
+                    document.write("*");
+                }
+
+                for (k = a; k < i; k--) {
+                    document.write(" &nbsp; ");
+                }
+                document.write("<br>");
+            }
+        }
+    </script>
+
+</body>
+
+</html>

@@ -65,15 +65,12 @@
         
         for (let i = 0; i < clArr.length; i++) {
           
-          if (document.getElementById("stbtn").innerHTML == "START") {
-            break;
-          }
-
+          
           setTimeout(() => {
             
-            console.log(i + " = " + clArr[i]);
+            // console.log(i + " = " + clArr[i]);
             document.getElementById("colorbox").style.backgroundColor = clArr[i];
-            document.getElementById("colorbox").style.boxShadow = "0px 0px 90px " + clArr[i];
+            // document.getElementById("colorbox").style.boxShadow = "0px 0px 90px " + clArr[i];
                  
           }, timer = timer + 900);
          

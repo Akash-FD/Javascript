@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        var a = new Date();
+
+        // document.write(a + "<br>")
+        // document.write(a.toDateString() + "<br>")
+        document.write(a.getDay() + "<br>")
+        document.write(a.getDate() + "<br>")
+        document.write(a.getMonth()+1 + "<br>")
+        document.write(a.getFullYear() + "<br>")
+        document.write(a.getHours() + "<br>")
+        document.write(a.getMinutes() + "<br>")
+        document.write(a.getSeconds() + "<br>")
+        document.write(a.getMilliseconds() + "<br>")
+
+        document.write("<hr>")
+        document.write("<hr>")
+        document.write("<hr>")
+
+        var b = new Date();
+
+        b.setDate(30);
+        document.write(b + "<br>")
+
+        b.setFullYear(2019);
+        document.write(b + "<br>")
+
+        b.setHours(7);
+        document.write(b + "<br>")
+
+        b.setMinutes(25);
+        document.write(b + "<br>")
+
+        document.write("<hr>")
+        document.write("<hr>")
+        document.write("<hr>")
+
+        var c = new Date();
+
+       
+        document.write(c.getDate() +"/"+(c.getMonth()+1) + "/" +c.getFullYear())
+
+
+    </script>
+</body>
+
+</html>

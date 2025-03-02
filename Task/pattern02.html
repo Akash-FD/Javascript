@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="n1" placeholder="Enter value">
+    <button onclick="pat()">Print Pattern</button>
+
+    <script>
+        function pat(){
+
+            let a = document.getElementById("n1").value;
+            for(a; a>=1; a--){
+
+                for(b=a; b<=a && b>=1; b--){
+                    
+                    document.write("*")
+                }
+                
+                document.write("<br>")
+            }
+
+
+        }
+
+    </script>
+    
+</body>
+</html>

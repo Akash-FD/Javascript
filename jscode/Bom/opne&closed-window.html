@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="openwin()">Open Window</button>
+    <button onclick="closedwin()">closed Window</button>
+    <script>
+        var mywindow;
+        
+        function openwin(){
+
+            // window.open("url","_blank","height,width")
+            mywindow = window.open("file:///C:/Users/Akash%20patel/Desktop/Akash%20Github/Website-clone/wesite/Amazon/Amazon.html","_parent","width=700px,height=200px,top=300px,left=100px")
+
+            //_blank ni jagya ae _perent vapriae to window same tab ma open thase
+        }
+        function closedwin(){
+            mywindow = window.closed()
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Get Method -->
+
+    <!--            innertext
+                    innerhtml
+                    getattribute
+                    getattributenode
+                    attributes     -->
+
+
+    <!-- set Method -->
+
+    <!--            innertext
+                    innerhtml
+                    setattribute
+                    attributes 
+                    removeAttribute    -->
+
+    <div class="header" id="div" style="border: 1px solid red;">
+        <h1>Hello World</h1>
+        <h1>Hello World heyyyy..</h1>
+    </div>
+
+    <script>
+
+        let a = document.querySelector(".header").innerHTML = "<h2>hyyy</h2>"
+
+        let b = document.querySelector(".header").innerText = "hello"
+        let c = document.querySelector(".header").getAttributeNode("id")
+        let d = document.querySelector(".header").getAttributeNode("style")
+        let e = document.querySelector(".header").attributes[0].value
+
+        console.log(a)
+        console.log(b)
+        console.log(c)
+        console.log(d)
+        console.log(e)
+
+
+
+
+    </script>
+</body>
+
+</html>

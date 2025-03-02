@@ -13,33 +13,41 @@
         <input type="text" placeholder="Orignel String" id="in1">
         <hr>
         <p id="in2"></p>
-        <hr>
-        <hr>
+        <br>
+        <br>
         <button onclick="UPPER()">Uppercase</button>
         <button onclick="LOWER()">Lowercase</button>
         <button onclick="len()">Total Lenth</button>
         <button onclick="remove()">Remove Space</button>
-        <button>Count Space</button>
-        <button>Clear</button>
+        <button onclick="countall()">Count Space</button>
+        <button onclick="clearall()">Clear</button>
 
     </div>
 
     <script>
         function UPPER(){
             let a = document.getElementById("in1").value;
-            document.getElementById("in2").innerHTML = document.getElementById("in1").value.toUpperCase();
+            document.getElementById("in2").innerHTML = a.toUpperCase()
         }
         function LOWER(){
-            let a = document.getElementById("in1").value;
-            document.getElementById("in2").innerHTML = document.getElementById("in1").value.toLowerCase();
+            let b = document.getElementById("in1").value;
+            document.getElementById("in2").innerHTML = b.toLowerCase();
         }
         function len(){
-            let a = document.getElementById("in1").value;
-            document.getElementById("in2").innerHTML = document.getElementById("in1").value.length;
+            let c = document.getElementById("in1").value;
+            document.getElementById("in2").innerHTML = c.length;
         }
         function remove(){
-            let a = document.getElementById("in1").value;
-            document.getElementById("in2").innerHTML = document.getElementById("in1").value.toUppercase();
+            let d = document.getElementById("in1").value;
+            document.getElementById("in2").innerHTML = d.trim();
+        }
+        function clearall(){
+            let f = document.getElementById("in1").value;
+            document.getElementById("in2").innerText = f.clearAll;
+        }
+        function countall(){
+            let e = document.getElementById("in1").value;
+            document.getElementById("in2").innerHTML = e.count()
         }
     </script>
 </body>

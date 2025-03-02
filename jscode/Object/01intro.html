@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let a = {
+            
+            fname : "Akash",
+            lname : "patel",
+            age  : 12,
+            email : "akash@gmail.com",
+            favMovies : ["3 idiot", "KGF", "Race2"],
+
+            living : {
+                "city" : "ahmedabad",
+                "country" : "India"
+            },
+            salary : function(){
+
+                return 30000;
+            },
+            fullname : function(){
+                return this.fname + " "+this.lname;
+            }
+        }
+
+        console.log(a);
+        document.write(a["lname"]);    
+        document.write(a.favMovies[1]);
+        document.write(a.salary());
+        document.write(a.fullname());
+        document.write(a.living.city);
+    </script>
+</body>
+</html>

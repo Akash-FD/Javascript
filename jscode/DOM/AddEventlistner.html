@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            height: 60px;
+            background-color: red;
+            color: aliceblue;
+            text-align: center;
+        }
+        body{
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading">Hello Akash</h1>
+    <script>
+        document.getElementById("heading").addEventListener("click",abc)
+        // document.getElementById("heading").addEventListener("mouseenter",abc)
+
+        function abc(){
+
+            let a = 0;
+            if (a == 0){
+
+                
+                document.getElementById("heading").style.backgroundColor = "green"
+                document.getElementById("heading").style.color = "black"
+                document.getElementById("heading").style.body = "black"
+                console.log("heyy");
+               
+            } else{
+                
+                console.log("hii");
+                document.getElementById("heading").style.backgroundColor = "yellow"
+                
+            }
+        }
+    </script>
+    
+</body>
+</html>

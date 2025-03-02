@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+          // example 1
+        let a = [4, 5, 15, 20];
+
+        let b = a.map(test);
+
+        document.write(a + "<br>");
+        
+        document.write(b + "<br>")
+        function test(x){
+
+            return x*10;
+        }
+        
+         // example 2
+
+        let ary = [
+            {name: 'ram', age: 22},
+            {name: 'karan', age: 23},
+            {name: 'rahul', age: 21}
+        ];
+
+        let c = ary.map(test2);
+
+        document.write(c);
+
+        function test2(x){
+            return x.name + " " + x.age;
+        }
+
+    </script>
+</body>
+</html>

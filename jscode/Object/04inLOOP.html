@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+       <!-- For/in loop -->
+    <script>
+
+       let obj = {
+            
+            fname : "Akash",
+            lname : "patel",
+            age  : 12,
+            email : "akash@gmail.com"
+          };
+
+        obj = {
+            
+            fname : "ram",
+            lname : "patel",
+            age  : 23,
+            email : "ram@gmail.com"
+          };
+
+        for(let key in obj){
+            document.write( key + " :" + obj["fname"] + "<br>")
+        }
+
+        // key mens fname, lname, age etc..
+
+
+    </script>
+</body>
+</html>

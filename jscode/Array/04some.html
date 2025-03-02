@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = [2,3,4,50]
+        // document.write(a+"<br>")
+        
+        let b = a.some(adult)
+        document.write(b+"<br>")
+
+        let c = a.every(adult)
+        document.write(c+"<br>")
+
+        let d = a.indexOf(50)
+        document.write(d+"<br>")
+
+
+
+        function adult(a){
+            return a>=18;
+        }
+
+    </script>
+</body>
+</html>
